@@ -79,7 +79,8 @@
 						<li>HTML(5)</li>
 						<li>CSS(3)</li>
 						<li>Javascript</li>
-						<li>Tailwind</li>
+						<li>ReactJs</li>
+						<li>Tailwind CSS</li>
 					</ul>
 				</div>
 				<div class="small-12 medium-4 columns text-center experience-topics">
@@ -90,6 +91,7 @@
 						<li>Flask</li>
 						<li>REST API</li>
 						<li>SQLite</li>
+						<li>PostgreSQL</li>
 						<li>MySQL</li>
 			  	</ul>
 				</div>
@@ -98,7 +100,9 @@
 					<h3>Tools</h3>
 					<ul>
 						<li>VsCode||Atom</li>
-						<li>Github</li>
+						<li>Unittest</li>
+						<li>PyTest</li>						
+						<li>Git</li>
 						<li>Agile-Scrum</li>
 					</ul>
 				</div>
@@ -115,7 +119,7 @@
 
 			<div class="row work-row"> <!-- odd -->
 				<div class="small-12 medium-6 medium-push-6 columns">
-					<img src="assets/images/HomePage_LoggedIn_Awesome Blog.png" alt="">
+					<img src="assets/images/HomePage_LoggedIn_Awesome Blog.png" alt="blog-image">
 				</div>
 				<div class="small-12 medium-5 medium-pull-7 columns">
 					<div class="details details-ftm">
@@ -124,7 +128,37 @@
 						<p class="icons"><i class="fi-monitor"></i><i class="fi-tablet-portrait"></i><i class="fi-mobile"></i></p>
 						<p>Built a blog application using Flask and Flask Blueprint in Python. Anyone can view a post on the blog however, a user needs 
 							to be signed in to be able to post an article. The homepage of the blog shows posts made by users with the latest posts at the top and the most viewed posts on the right</p>
-						<a class="my-button" target="_blank" href="https://github.com/kojosimtema/awesome-blog">View Repo</a>
+						<a class="my-button" target="_blank" href="https://kojosimtema.pythonanywhere.com/">View Site</a>
+					</div>
+				</div>
+			</div>
+			<div class="row work-row"> <!-- even -->
+				<div class="small-12 medium-6 columns">
+					<img src="assets/images/Student Management API.png" alt="student-api-image">
+				</div>
+				<div class="small-12 medium-5 medium-offset-1 columns">
+					<div class="details details-ftm">
+						<h3>Student Management System API</h3>
+						<p class="platform">Web</p>
+						<p class="icons"><i class="fi-monitor"></i><i class="fi-tablet-portrait"></i><i class="fi-mobile"></i></p>
+						<p>Built a student management REST-API using python Flask and Flask-smorest that enables users to add students, courses and grade the students as well. 
+							Both administrators and students can use this application onces logged in</p>
+						<a class="my-button" target="_blank" href="https://students-management-system-api.herokuapp.com/">View API</a>
+					</div>
+				</div>
+			</div>
+			<div class="row work-row"> <!-- odd -->
+				<div class="small-12 medium-6 medium-push-6 columns">
+					<img src="assets/images/Screenshot 2023-11-08 at 22-46-05 Cixors.png" alt="cixors-image">
+				</div>
+				<div class="small-12 medium-5 medium-pull-7 columns">
+					<div class="details details-ftm">
+						<h3>Cixors Application</h3>
+						<p class="platform">Web</p>
+						<p class="icons"><i class="fi-monitor"></i><i class="fi-tablet-portrait"></i><i class="fi-mobile"></i></p>
+						<p>In today’s world, it’s important to keep things as short as possible, and this applies to more concepts than you may realize. 
+							From music, speeches, to wedding receptions. Cixors is a simple tool which makes URLs as short as possible. Cixors is a URL shortener RESTFul-API which was built using python Flask and Flask-RestX for backend and ReactJS for frontend</p>
+						<a class="my-button" target="_blank" href="https://cixor.onrender.com/">View Site</a> <span></span> <a class="my-button" target="_blank" href="https://cixors.onrender.com/">View API</a>
 					</div>
 				</div>
 			</div>
@@ -167,7 +201,7 @@
 			<div class="row text-center">
 				<div class="small-12 medium-6 medium-offset-3 columns">
 					<p id="logo">JS</p>
-					<p id="copyright">Copyright &copy; 2023 | Jason Kojo Simtema</p>
+					<p id="copyright">Copyright &copy; <span id="year"></span> | Jason Kojo Simtema</p>
 				</div>
 			</div>
 		</footer>
@@ -176,6 +210,7 @@
 
 	</div>
 	<script src="assets/scripts/app.js" charset="utf-8"></script>
+	<script>document.getElementById("year").innerHTML = new Date().getFullYear();</script>
 </body>
 
 </html>
