@@ -345,3 +345,21 @@ h1, h2, h3, h4, h5, h6 {
     margin-bottom: 40px;
 
 }
+
+
+/* MOBILE VIEW */
+
+@media screen and (max-width:420px) {
+	#work {
+		padding: 3em 1em 3em;
+	}
+
+	#footer-cta{
+		padding: 3em 3em 3em;
+	}
+
+	.my-button:hover {
+		cursor: pointer;
+		padding: .8em 2.2em;
+	}
+}
