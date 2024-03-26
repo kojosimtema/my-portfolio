@@ -169,6 +169,10 @@ h1, h2, h3, h4, h5, h6 {
 	/*font-weight: 500;*/
 }
 
+.experience-topics ul {
+	margin-left: 0;
+}
+
 .experience-topics ul li {
 	list-style: none;
 	color: #bbd2ff;
